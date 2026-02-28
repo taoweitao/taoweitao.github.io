@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yutian Tao — Personal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Sticky nav -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-link">Home</a>
+      <span class="nav-sep">·</span>
+      <a href="#research" class="nav-link">Research</a>
+      <span class="nav-sep">·</span>
+      <a href="#experience" class="nav-link">Experience</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-title">Yutian Tao</h1>
+
+          <img
+            src="images/photo.png"
+            alt="Yutian Tao"
+            class="hero-photo hero-photo--float"
+            width="200"
+            height="200"
+          >
+
+          <p class="hero-bio">
+            Hi, I’m Yutian Tao, a final-year Ph.D. student in Computer Science at the <a href="https://www.wisc.edu/" target="_blank" rel="noopener">University of Wisconsin–Madison</a>, advised by <a href="https://pages.cs.wisc.edu/~sifakis/" target="_blank" rel="noopener">Prof. Eftychios Sifakis</a>. Before my Ph.D., I earned my B.S. in Computer Science from <a href="https://www.nju.edu.cn/en/" target="_blank" rel="noopener">Nanjing University</a>. My research centers on physics-based simulation and numerical methods, with a focus on building fast, robust solvers for discretized PDE systems that arise in graphics and physical modeling. In particular, I work on Stokes and other saddle-point problems, multigrid and Krylov methods, and efficient simulation pipelines.
+          </p>
+          <p class="hero-bio">
+            I enjoy working at the boundary of theory and systems by developing algorithms that are mathematically grounded and engineering them into implementations that scale and behave reliably in practice. I’m also interested in how physics-based simulation can be applied to robotics, and in how large language models (LLMs) and their extensions may reshape the way we learn, create, and work.
+          </p>
+
+          <div class="hero-contact">
+            <div class="row">
+              <div class="col">
+                <a class="pr-3 no-break" href="mailto:shiningskytao@gmail.com">
+                  <i class="fas fa-at"></i> <span class="email-text">shiningskytao(at)gmail.com</span>
+                </a>
+                <a class="pr-3 no-break" target="_blank" rel="noopener" href="https://scholar.google.com/citations?hl=en&user=8EhqVPEAAAAJ">
+                  <i class="fab fa-google-scholar"></i> Google Scholar
+                </a>
+                <a class="pr-3 no-break" target="_blank" rel="noopener" href="https://github.com/taoweitao">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a class="pr-3 no-break" target="_blank" rel="noopener" href="https://www.linkedin.com/in/yutian-tao-cs">
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <span class="hero-updated">Last updated: <time id="last-updated"></time></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="section research-section">
+      <header class="section-header">
+        <h2 class="section-title">Research</h2>
+        <p class="section-subline"><a href="https://scholar.google.com/citations?hl=en&user=8EhqVPEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Full list on Google Scholar</a></p>
+      </header>
+
+      <div class="papers" id="papers">
+        <article class="paper-row" data-year="2026">
+          <div class="paper-thumb">
+            <img src="images/papers/paper1.png" alt="" width="200" height="133">
+          </div>
+          <div class="paper-content">
+            <h3 class="paper-title"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8EhqVPEAAAAJ&citation_for_view=8EhqVPEAAAAJ:zYLM7Y9cAGgC" target="_blank" rel="noopener">All-Optical Deep Learning with Quantum Nonlinearity</a></h3>
+            <p class="paper-meta">Q Zhou*, J Kim*, <strong class="author-me">Y Tao</strong>*, G Huang, M Zhou, Z Shao, Z Yu. <em>arXiv preprint arXiv:2601.01690</em>, 2026.</p>
+            <p class="paper-note">* Equal contribution.</p>
+            <p class="paper-blurb">All-optical deep learning leveraging quantum nonlinearity; collaborative work on optical computing.</p>
+            <p class="paper-links">
+              <a href="papers/2601.01690.pdf" target="_blank" rel="noopener">PDF</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="paper-row" data-year="2025">
+          <div class="paper-thumb">
+            <img src="images/papers/paper2.png" alt="" width="200" height="133">
+          </div>
+          <div class="paper-content">
+            <h3 class="paper-title"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8EhqVPEAAAAJ&citation_for_view=8EhqVPEAAAAJ:IjCSPb-OGe4C" target="_blank" rel="noopener">Interpolated Adaptive Linear Reduced Order Modeling for Deformation Dynamics</a></h3>
+            <p class="paper-meta"><strong class="author-me">Y Tao</strong>, M Chiaramonte, P Fernandez. <em>arXiv preprint arXiv:2509.25392</em>, 2025.</p>
+            <p class="paper-blurb">Adaptive reduced-order models for deformation dynamics using interpolated linear bases.</p>
+            <p class="paper-links">
+              <a href="papers/2509.25392.pdf" target="_blank" rel="noopener">PDF</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="paper-row" data-year="2025">
+          <div class="paper-thumb">
+            <img src="images/papers/paper3.png" alt="" width="200" height="133">
+          </div>
+          <div class="paper-content">
+            <h3 class="paper-title"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8EhqVPEAAAAJ&citation_for_view=8EhqVPEAAAAJ:UeHWp8X0CEIC" target="_blank" rel="noopener">Retrieval-augmented generation as noisy in-context learning: A unified theory and risk bounds</a></h3>
+            <p class="paper-meta">Y Guo, <strong class="author-me">Y Tao</strong>, Y Ming, RD Nowak, Y Liang. <em>arXiv preprint arXiv:2506.03100</em>, 2025.</p>
+            <p class="paper-blurb">Theoretical framework connecting RAG to noisy in-context learning with risk bounds.</p>
+            <p class="paper-links">
+              <a href="papers/2506.03100.pdf" target="_blank" rel="noopener">PDF</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="paper-row" data-year="2024">
+          <div class="paper-thumb">
+            <img src="images/papers/paper4.png" alt="" width="200" height="133">
+          </div>
+          <div class="paper-content">
+            <h3 class="paper-title"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8EhqVPEAAAAJ&citation_for_view=8EhqVPEAAAAJ:qjMakFHDy7sC" target="_blank" rel="noopener">A symmetric multigrid-preconditioned Krylov subspace solver for Stokes equations</a></h3>
+            <p class="paper-meta"><strong class="author-me">Y Tao</strong>, E Sifakis. <em>Computers &amp; Mathematics with Applications</em> 172, 168–180, 2024.</p>
+            <p class="paper-blurb">Symmetric multigrid preconditioning for Krylov solvers applied to Stokes flow in graphics and simulation.</p>
+            <p class="paper-links">
+              <a href="papers/2312.10615.pdf" target="_blank" rel="noopener">PDF</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="paper-row" data-year="2022">
+          <div class="paper-thumb">
+            <img src="images/papers/paper5.png" alt="" width="200" height="133">
+          </div>
+          <div class="paper-content">
+            <h3 class="paper-title"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8EhqVPEAAAAJ&citation_for_view=8EhqVPEAAAAJ:d1gkVwhDpl0C" target="_blank" rel="noopener">A computer based facial flaps simulator using projective dynamics</a></h3>
+            <p class="paper-meta">Q Wang, <strong class="author-me">Y Tao</strong>, C Cutting, E Sifakis. <em>Computer Methods and Programs in Biomedicine</em> 218, 106730, 2022.</p>
+            <p class="paper-blurb">Facial flap surgery simulator built with projective dynamics for real-time, stable biomechanical simulation.</p>
+            <p class="paper-links">
+              <a href="papers/facial-flaps-2022.pdf" target="_blank" rel="noopener">PDF</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="paper-row older" data-year="2022">
+          <div class="paper-thumb">
+            <img src="images/papers/paper6.png" alt="" width="200" height="133">
+          </div>
+          <div class="paper-content">
+            <h3 class="paper-title"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8EhqVPEAAAAJ&citation_for_view=8EhqVPEAAAAJ:9yKSN-GCB0IC" target="_blank" rel="noopener">Long-term results of the Murawski unilateral cleft lip repair</a></h3>
+            <p class="paper-meta">EL Murawski, EH Gawrych, ED Sifakis, Q Wang, <strong class="author-me">Y Tao</strong>. <em>Plastic and Reconstructive Surgery</em> 149 (2), 254e–260e, 2022.</p>
+            <p class="paper-blurb">Long-term clinical outcomes of unilateral cleft lip repair; supporting simulation and validation pipeline.</p>
+            <p class="paper-links">
+              <a href="papers/10424342.pdf" target="_blank" rel="noopener">PDF</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="paper-row older" data-year="2021">
+          <div class="paper-thumb">
+            <img src="images/papers/paper7.png" alt="" width="200" height="133">
+          </div>
+          <div class="paper-content">
+            <h3 class="paper-title"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8EhqVPEAAAAJ&citation_for_view=8EhqVPEAAAAJ:2osOgNQ5qMEC" target="_blank" rel="noopener">Optimized processing of localized collisions in projective dynamics</a></h3>
+            <p class="paper-meta">Q Wang, <strong class="author-me">Y Tao</strong>, E Brandt, C Cutting, E Sifakis. <em>Computer Graphics Forum</em> 40 (6), 382–393, 2021.</p>
+            <p class="paper-blurb">Efficient handling of localized collisions in projective dynamics for surgical and graphics applications.</p>
+            <p class="paper-links">
+              <a href="papers/2008.01541.pdf" target="_blank" rel="noopener">PDF</a>
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="show-older-wrap" id="show-older-wrap">
+        <button type="button" class="btn-show-older" id="btn-show-older">Show older publications</button>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section experience-section">
+      <h2 class="section-title">Experience</h2>
+
+      <h3 class="subsection-title">Work / Research Experience</h3>
+      <div class="experience-list">
+        <div class="exp-entry exp-work">
+          <div class="exp-logo">
+            <img src="images/experience/meta.png" alt="Meta" width="48" height="48" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <span class="exp-org">Meta</span>
+              <span class="exp-dates">Jun 2025 – Oct 2025</span>
+            </div>
+            <p class="exp-role">Research Scientist Intern · Reality Labs</p>
+            <p class="exp-summary">Built an AI-driven simulation pipeline with reduced-order modeling (300k+ soft-body samples) and a physics-informed autoencoder for 1k× compression and 70% lower simulation error.</p>
+          </div>
+        </div>
+        <div class="exp-entry exp-work">
+          <div class="exp-logo">
+            <img src="images/experience/foundation-llm.png" alt="Foundation LLM" width="48" height="48" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <span class="exp-org">Foundation LLM</span>
+              <span class="exp-dates">Jan 2024 – Jan 2025</span>
+            </div>
+            <p class="exp-role">Applied Research Intern</p>
+            <p class="exp-summary">Built Marching Cubes voxelization and mesh QC for 3D asset validation, focusing on watertight mesh generation and removing 87% of malformed meshes for simulation-conditioned vision models.</p>
+          </div>
+        </div>
+        <div class="exp-entry exp-work">
+          <div class="exp-logo">
+            <img src="images/experience/microsoft.png" alt="Microsoft" width="48" height="48" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <span class="exp-org">Microsoft Research Asia</span>
+              <span class="exp-dates">Jul 2020 – Dec 2020</span>
+            </div>
+            <p class="exp-role">Research Intern · Internet Graphics</p>
+            <p class="exp-summary">Ported and profiled the Incremental Potential Contact (IPC) algorithm in modern C++, uncovering bottlenecks and outlining optimizations for graphics research.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visitor map -->
+    <footer class="footer">
+      <div class="visitor-map-card">
+        <p class="visitor-caption">Visitors</p>
+        <div class="visitor-widget">
+          <p class="visitor-caption">Visitors</p>
+          <div class="visitor-placeholder-box">
+            <p class="visitor-placeholder">Visitor map placeholder.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
